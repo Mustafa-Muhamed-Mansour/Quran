@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.quran.ui.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/splash_fragment"
+        >
+        <action
+            android:id="@+id/action_splashFragment_to_surahFragment"
+            app:destination="@id/surahFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/surahDetailsFragment"
+        android:name="com.quran.surahDetails.SurahDetailsFragment"
+        android:label="surah_details_fragment"
+        tools:layout="@layout/surah_details_fragment" />
+    <fragment
+        android:id="@+id/surahFragment"
+        android:name="com.quran.surah.SurahFragment"
+        android:label="SurahFragment"
+        tools:layout="@layout/surah_fragment"
+        >
+        <action
+            android:id="@+id/action_surahFragment_to_surahDetailsFragment"
+            app:destination="@id/surahDetailsFragment"
+            app:popUpTo="@id/surahDetailsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

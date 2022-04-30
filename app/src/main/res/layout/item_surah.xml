@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_15sdp"
+            >
+
+            <RelativeLayout
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/ic_ayah"
+                android:layout_margin="@dimen/_3sdp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/teal_700"
+                >
+
+                <TextView
+                    android:id="@+id/item_surah_txt_number_ayah"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:layout_weight="1"
+                    >
+
+                    <TextView
+                        android:id="@+id/item_surah_txt_english_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="El-Fathia"
+                        android:textSize="@dimen/_17ssp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_margin="@dimen/_3sdp"
+                        />
+
+                    <TextView
+                        android:id="@+id/item_surah_txt_total_number_ayah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 aya"
+                        android:textSize="@dimen/_13ssp"
+                        android:layout_margin="@dimen/_3sdp"
+                        />
+
+                </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_surah_txt_arabic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الفاتحة"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/_3sdp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/relative_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/bottom_sheet_txt_english_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Translation"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_5sdp"
+            />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottom_sheet_txt_english_name"
+            android:layout_margin="@dimen/_5sdp"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_btn_english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/black"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_btn_spanish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spanish"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/black"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_btn_chinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chinese"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/black"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_btn_turkish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Turkish"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/black"
+                />
+
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_group"
+            app:backgroundTint="@null"
+            android:text="Save"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:cornerRadius="@dimen/_10sdp"
+            app:elevation="@dimen/_10sdp"
+            />
+
+
+    </RelativeLayout>
+</layout>
